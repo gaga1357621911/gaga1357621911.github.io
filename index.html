@@ -8,7 +8,8 @@
 	
 	<title>嘎嘎是个小欢喜的六一幸运大奖盘</title>
 
-
+<style>
+</style>
 </head>
 <body>
 	<div class="htmleaf-container">
@@ -209,7 +210,7 @@
 		  //strokeStyle 属性设置或返回用于笔触的颜色、渐变或模式  
 		  ctx.strokeStyle = "#FFBE04";
 		  //font 属性设置或返回画布上文本内容的当前字体属性
-		  ctx.font = '24px HYYouRanTiJ';      
+		  ctx.font = "20px HYYouRanTiJ";
 		  for(var i = 0; i < turnplate.restaraunts.length; i++) {       
 			  var angle = turnplate.startAngle + i * arc;
 			  ctx.fillStyle = turnplate.colors[i];
@@ -236,7 +237,7 @@
 			  if(text.indexOf("M")>0){//流量包
 				  var texts = text.split("M");
 				  for(var j = 0; j<texts.length; j++){
-					  ctx.font = j == 0?'bold 20px Microsoft YaHei':'24px HYYouRanTiJ';
+					  ctx.font = j == 0?'bold 20px Microsoft YaHei':'20px HYYouRanTiJ';
 					  if(j == 0){
 						  ctx.fillText(texts[j]+"M", -ctx.measureText(texts[j]+"M").width / 2, j * line_height);
 					  }else{
