@@ -9,6 +9,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'HYYouRanTiJ';
+	src:url('../fonts/HYYouRanTiJ.ttf');
+}
 html{
 	margin: 0px;
 	padding: 0px;
@@ -20,13 +24,12 @@ body{
 	background-image: url("../images/bgimg.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	/*font-family:"汉仪悠然体简", "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;*/
+	font-family:"HYYouRanTiJ";
 	letter-spacing:-6px;
 }
 .htmleaf-container{
 
 	color:#ff3333;
-	font-size: 24px;
 	text-align: center;
 }
 .htmleaf-content{
