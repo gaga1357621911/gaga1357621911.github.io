@@ -104,7 +104,6 @@
 			bRotate:false				//false:停止;ture:旋转
 	};
 
-	$(document).ready(function(){
 		//动态添加大转盘的奖品与奖品区域背景颜色
 		turnplate.restaraunts = ["亲亲", "抱抱", "举高高", "谢谢参与", "炸鸡", "啤酒", "小烧烤 ", "按摩", "看个电影", "唠会嗑"];
 		turnplate.colors = ["#FFF4D6", "#FFFFFF", "#FFF4D6", "#FFFFFF","#FFF4D6", "#FFFFFF", "#FFF4D6", "#FFFFFF","#FFF4D6", "#FFFFFF"];
@@ -189,8 +188,7 @@
 				alert("您已经参加过了您上次的抽奖结果是："+getStorage('txt'))
 			}
 		});
-	});
-
+		drawRouletteWheel();
 	function rnd(n, m){
 		var random = Math.floor(Math.random()*(m-n+1)+n);
 		return random;
@@ -199,9 +197,6 @@
 
 
 	//页面所有元素加载完毕后执行drawRouletteWheel()方法对转盘进行渲染
-	window.onload=function(){
-		drawRouletteWheel();
-	};
 
 	function drawRouletteWheel() {    
 	  var canvas = document.getElementById("wheelcanvas");    
