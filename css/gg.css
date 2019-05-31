@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'HYYouRanTiJ';
-	src:url('../fonts/HYYouRanTiJ.ttf');
+	src:url('../fonts/HYYouRanTiJ.ttf') format('truetype');
 }
 html{
 	margin: 0px;
